@@ -22,7 +22,7 @@ finish-args:
 build-options:
     env:
         JAVA_HOME: /usr/lib/sdk/openjdk11/
-        ROBOCODE_VERSION: '1.9.3.7'
+        ROBOCODE_VERSION: '1.9.3.9'
 modules:
   - name: openjdk
     buildsystem: simple
@@ -36,8 +36,8 @@ modules:
     sources:
       # Fetch project.
       - type: file
-        url: https://netcologne.dl.sourceforge.net/project/robocode/robocode/1.9.3.7/robocode-1.9.3.7-setup.jar
-        sha256: 75632a88ec041ec0d4fe756fd8f7c82ebe4061aea4a8e7e123ae713a0ae44826
+        url: https://netcologne.dl.sourceforge.net/project/robocode/robocode/1.9.3.9/robocode-1.9.3.9-setup.jar
+        sha256: d7891f35c0f0dd5911a4aec64d8524be63d920691c0485c2c4b4657512f16064
         dest-filename: robocode.jar
       # Extract project.
       - type: shell
