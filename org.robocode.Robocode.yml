@@ -1,6 +1,6 @@
 app-id: org.robocode.Robocode
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk11
@@ -36,7 +36,7 @@ modules:
     sources:
       # Fetch project.
       - type: file
-        url: https://netcologne.dl.sourceforge.net/project/robocode/robocode/1.9.3.9/robocode-1.9.3.9-setup.jar
+        url: https://sourceforge.net/projects/robocode/files/robocode/1.9.3.9/robocode-1.9.3.9-setup.jar/download
         sha256: d7891f35c0f0dd5911a4aec64d8524be63d920691c0485c2c4b4657512f16064
         dest-filename: robocode.jar
       # Extract project.
