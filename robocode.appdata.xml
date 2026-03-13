@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<component type="desktop">
+<component type="desktop-application">
   <id>org.robocode.Robocode</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>EPL-1.0</project_license>
@@ -20,12 +20,18 @@
   </description>
   <developer_name>Robocode Community</developer_name>
   <url type="homepage">https://robocode.sourceforge.io/</url>
-  <url type="help">http://robowiki.net/wiki/Robocode_Basics</url>
+  <url type="help">https://robowiki.net/wiki/Robocode_Basics</url>
   <launchable type="desktop-id">org.robocode.Robocode.desktop</launchable>
   <screenshots>
-    <screenshot type="default">https://raw.githubusercontent.com/joaquimrocha/org.robocode.Robocode/screenshots/robocode1.png</screenshot>
-    <screenshot>https://raw.githubusercontent.com/joaquimrocha/org.robocode.Robocode/screenshots/robocode2.png</screenshot>
-    <screenshot>https://raw.githubusercontent.com/joaquimrocha/org.robocode.Robocode/screenshots/robocode3.png</screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/joaquimrocha/org.robocode.Robocode/screenshots/robocode1.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/joaquimrocha/org.robocode.Robocode/screenshots/robocode2.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/joaquimrocha/org.robocode.Robocode/screenshots/robocode3.png</image>
+    </screenshot>
   </screenshots>
   <releases>
     <release version="1.9.3.9" date="2020-04-21" />
