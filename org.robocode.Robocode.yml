@@ -1,6 +1,6 @@
 app-id: org.robocode.Robocode
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk11
@@ -33,6 +33,10 @@ modules:
     buildsystem: simple
     build-commands:
       - mkdir -p /app/bin
+    post-install:
+      - install -Dm644 robocode.desktop -t /app/share/applications/
+      - install -Dm644 robocode.appdata.xml -t /app/share/metainfo/
+      - install -Dm644 robocode.png -t /app/share/icons/hicolor/128x128/apps/
     sources:
       # Fetch project.
       - type: file
@@ -73,18 +77,7 @@ modules:
       # Install AppData.
       - type: file
         path: robocode.appdata.xml
-      - type: shell
-        commands:
-          - install -Dm644 robocode.appdata.xml /app/share/appdata/robocode.appdata.xml
-      # Install icon.
       - type: file
         path: robocode.png
-      - type: shell
-        commands:
-          - install -Dm644 robocode.png /app/share/icons/hicolor/128x128/apps/robocode.png
-      # Install desktop file.
       - type: file
         path: robocode.desktop
-      - type: shell
-        commands:
-          - install -Dm644 robocode.desktop /app/share/applications/robocode.desktop
